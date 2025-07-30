@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A sample HTML5 document demonstrating semantic structure, accessibility, and SEO best practices.">
+  <meta name="keywords" content="HTML5, semantic HTML, accessibility, SEO, example">
+  <meta name="author" content="Your Name (or Website Name)">
+  <title>Semantic HTML5 Example | Accessible & SEO-Friendly</title>
+
+  <!--  Favicon (replace with your actual favicon) -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!--  Consider linking to an external stylesheet for styling (e.g., style.css)  -->
+  <!-- <link rel="stylesheet" href="style.css"> -->
+
+  <style>
+    /* Basic CSS for demonstration -  consider using an external stylesheet */
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+
+    header, main, footer {
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    nav a {
+      text-decoration: none;
+      padding: 5px 10px;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      color: #333;
+    }
+
+    nav a:hover {
+      background-color: #f0f0f0;
+    }
+
+    article {
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #eee;
+      border-radius: 3px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.8em;
+    }
+
+    /*  Accessibility improvements (basic example) */
+    :focus {
+      outline: 2px solid blue; /*  Makes the focus state visible for keyboard navigation */
+    }
+  </style>
+
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>  <!-- Skip link for keyboard navigation -->
+
+  <header>
+    <h1>Semantic HTML5 Example</h1>
+    <p>Demonstrating best practices for structure, accessibility, and SEO.</p>
+
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section>
+      <h2>About Us</h2>
+      <article>
+        <h3>Our Mission</h3>
+        <p>We strive to provide high-quality content and accessible web experiences for everyone.  This example demonstrates our commitment to following best practices in web development.</p>
+      </article>
+
+      <article>
+        <h3>Our Values</h3>
+        <p>We believe in transparency, accessibility, and continuous improvement.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Services</h2>
+      <article>
+        <h3>Web Design</h3>
+        <p>We offer custom web design services tailored to your specific needs.  We ensure all our designs are responsive, accessible, and SEO-friendly.</p>
+      </article>
+
+      <article>
+        <h3>SEO Optimization</h3>
+        <p>We can help improve your website's search engine ranking through various SEO techniques, including keyword research, content optimization, and link building.</p>
+      </article>
+    </section>
+
+    <aside>
+      <h2>Related Articles</h2>
+      <ul>
+        <li><a href="#">Accessibility Guidelines</a></li>
+        <li><a href="#">SEO Best Practices</a></li>
+        <li><a href="#">HTML5 Semantic Elements</a></li>
+      </ul>
+    </aside>
+
+     <section>
+       <h2>An Example Image</h2>
+       <figure>
+         <img src="Web Development.jpg" alt="A Web Development Picture" width="600" height="400">
+         <figcaption>Website Development</figcaption>
+       </figure>
+     </section>
+
+     <section>
+       <h2>Contact Form</h2>
+       <form action="#" method="post">  <!-- Replace # with your form processing script -->
+         <label for="name">Name:</label>
+         <input type="text" id="name" name="name" required aria-required="true">
+         <br><br>
+
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email" required aria-required="true">
+         <br><br>
+
+         <label for="message">Message:</label>
+         <textarea id="message" name="message" rows="4" cols="50" required aria-required="true"></textarea>
+         <br><br>
+
+         <button type="submit">Submit</button>
+       </form>
+     </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Shatulo Chikumbe. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
